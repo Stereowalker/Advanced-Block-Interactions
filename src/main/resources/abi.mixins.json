@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.stereowalker.abi.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "ABI-refmap.json",
+  "mixins": [
+	"JukeboxBlockEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,37 @@
+
+modLoader="javafml"
+loaderVersion="[39,)"
+license="All Rights Reserved"
+issueTrackerURL="https://github.com/Stereowalker/Controller-Support-Mod/issues"
+logoFile="pack.png"
+[[mods]]
+modId="abi"
+version="${file.jarVersion}"
+displayName="Advanced Block Interactions [ABI]"
+updateJSONURL="https://raw.githubusercontent.com/Stereowalker/My-Home-Page/main/abi-update.json"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/abi"
+credits="I'd like to thank all my supporters on Patreon for giving me a reason to continue modding, and you for downloading and playing with this mod"
+authors="Stereowalker"
+description='''
+This is a mod that allows players to remove music discs from jukeboxes when they're done playing and put discs in when there's no discs inside
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.abi]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[39,)" #mandatory
+    ordering="NONE"
+    side="CLIENT"
+# Here's another dependency
+[[dependencies.abi]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="CLIENT"
+[[dependencies.abi]]
+    modId="unionlib"
+    mandatory=true
+    versionRange="[7.1,7.2)"
+    ordering="NONE"
+    side="BOTH"
