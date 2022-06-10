@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "abi",
+  "version": "${version}",
+
+  "name": "Advanced Block Interactions [ABI]",
+  "description": "This is a mod that allows players to remove music discs from jukeboxes when they're done playing and put discs in when there's no discs inside",
+  "authors": [
+    "Stereowalker"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/abi-fabric"
+  },
+
+  "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+  "icon": "pack.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.stereowalker.abi.ABI"
+    ]
+  },
+  "mixins": [
+    "abi.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.2",
+    "java": ">=17",
+	"unionlib": [">=7.1.0", "<7.2.0"]
+  },
+  "accessWidener": "abi.accesswidener",
+  "suggests": {
+    "another-mod": "*"
+  }
+}
